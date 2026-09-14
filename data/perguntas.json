@@ -1,0 +1,110 @@
+{
+  "_fonte": "instrumentos_niko_niko_diario.pdf — transcrição verbatim, sem paráfrase",
+  "fases": [
+    {
+      "id": "formacao-equipe",
+      "nome": "Formação de equipe",
+      "perguntas": [
+        {
+          "pergunta": "Descreva como está sendo o processo de organização da sua equipe até agora — papéis, expectativas, primeiras decisões.",
+          "eixo_relacionado": "Projeto",
+          "referencial_teorico": "Aprendizagem situada (Lave & Wenger, 1991) — entrada na comunidade de prática"
+        },
+        {
+          "pergunta": "Que sensações ou pensamentos você tem tido em relação ao início desta disciplina e ao projeto que vocês vão desenvolver?",
+          "eixo_relacionado": "Transversal",
+          "referencial_teorico": "Aprendizagem experiencial (Marques et al., 2014) — disposição inicial para a experiência"
+        },
+        {
+          "pergunta": "Que conhecimentos, ferramentas ou práticas você sente que já domina, e quais ainda são novidade para você neste momento?",
+          "eixo_relacionado": "Hard skills",
+          "referencial_teorico": "SWEBOK (IEEE Computer Society, 2024) — amplitude de competências de base"
+        }
+      ]
+    },
+    {
+      "id": "pre-release-1",
+      "nome": "Pré-release 1",
+      "perguntas": [
+        {
+          "pergunta": "Conte como tem sido o ritmo de trabalho da sua equipe nesta fase de preparação para a primeira entrega.",
+          "eixo_relacionado": "Projeto",
+          "referencial_teorico": "Bittencourt et al., 2026 — ritmo sustentável como categoria de análise"
+        },
+        {
+          "pergunta": "Descreva uma situação recente de colaboração ou feedback, positiva ou difícil, que marcou sua semana.",
+          "eixo_relacionado": "Soft skills",
+          "referencial_teorico": "Aprendizagem situada (Lave & Wenger, 1991) — feedback como mediador de participação"
+        },
+        {
+          "pergunta": "Que responsabilidades técnicas você tem assumido, e como você tem lidado com elas?",
+          "eixo_relacionado": "Hard skills",
+          "referencial_teorico": "Dimensão sociotécnica (Hoda, 2022) — responsabilidade técnica"
+        }
+      ]
+    },
+    {
+      "id": "entre-releases",
+      "nome": "Entre releases",
+      "perguntas": [
+        {
+          "pergunta": "Olhando para a release que acabou de ser entregue, o que você diria que funcionou bem e o que não funcionou na sua equipe?",
+          "eixo_relacionado": "Projeto",
+          "referencial_teorico": "Aprendizagem experiencial (Marques et al., 2014) — reflexão sobre a ação"
+        },
+        {
+          "pergunta": "Como o feedback recebido (de colegas, professora, monitoria) tem influenciado o que vocês estão fazendo agora?",
+          "eixo_relacionado": "Soft skills",
+          "referencial_teorico": "Aprendizagem situada (Lave & Wenger, 1991) — feedback como mediador de participação"
+        },
+        {
+          "pergunta": "O que mudou, para você, entre o início da disciplina e este momento — tecnicamente e no seu jeito de trabalhar em equipe?",
+          "eixo_relacionado": "Hard skills",
+          "referencial_teorico": "Aprendizagem situada (Lave & Wenger, 1991) — trajetória de periférico a mais central"
+        }
+      ]
+    },
+    {
+      "id": "pre-release-2",
+      "nome": "Pré-release 2",
+      "perguntas": [
+        {
+          "pergunta": "Compare como você está se sentindo na preparação desta segunda entrega com a forma como se sentiu na primeira.",
+          "eixo_relacionado": "Projeto",
+          "referencial_teorico": "Aprendizagem experiencial (Marques et al., 2014) — iteração"
+        },
+        {
+          "pergunta": "Descreva como as decisões técnicas estão sendo tomadas na sua equipe nesta fase — quem decide, como se chega a um consenso.",
+          "eixo_relacionado": "Soft skills",
+          "referencial_teorico": "Dimensão sociotécnica (Bird et al., 2011) — negociação e propriedade de código"
+        },
+        {
+          "pergunta": "Que lacunas técnicas ainda te incomodam, e o que você tem feito, ou pretende fazer, a respeito?",
+          "eixo_relacionado": "Hard skills",
+          "referencial_teorico": "Dimensão sociotécnica (Hoda, 2022) — reconhecimento de lacunas técnicas"
+        }
+      ]
+    },
+    {
+      "id": "pos-entrega",
+      "nome": "Pós-entrega",
+      "perguntas": [
+        {
+          "pergunta": "Reflita sobre toda a disciplina: o que essa experiência te aproximou, ou não, de como você imagina o trabalho profissional em desenvolvimento de software?",
+          "eixo_relacionado": "Transversal",
+          "referencial_teorico": "Justificativa da proposta PIBIC — aproximação com práticas profissionais"
+        },
+        {
+          "pergunta": "Descreva a evolução da colaboração da sua equipe do início ao fim do semestre.",
+          "eixo_relacionado": "Soft skills",
+          "referencial_teorico": "Aprendizagem situada (Lave & Wenger, 1991) — síntese da participação"
+        },
+        {
+          "pergunta": "Se você pudesse voltar ao início do semestre sabendo o que sabe agora, o que faria diferente?",
+          "eixo_relacionado": "Transversal",
+          "referencial_teorico": "Aprendizagem experiencial (Marques et al., 2014) — transferência da experiência"
+        }
+      ]
+    }
+  ]
+}

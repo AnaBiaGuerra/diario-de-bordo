@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diário de Bordo — MDS</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Diário de bordo pessoal da disciplina Métodos de Desenvolvimento de Software (MDS) — instrumento de pesquisa PIBIC/UnB." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <link rel="icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    :root {
+      --theme-color: #2e8555;
+    }
+    .sidebar-nav li[data-nested] > a::before {
+      content: "🗒️ ";
+    }
+    nav.app-nav li ul {
+      min-width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Diário de Bordo — MDS',
+      repo: '',
+      homepage: 'docs/como-usar.md',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      search: {
+        depth: 3,
+        noData: 'Nada encontrado.',
+        placeholder: 'Buscar...',
+      },
+      plugins: [
+        // O front matter (title/authors/tags/date) fica no início dos
+        // arquivos em blog/ porque scripts/export-entries.mjs precisa dele
+        // para montar o pacote de dados da pesquisa. Ele não tem função de
+        // exibição, então este hook remove o bloco "---...---" antes do
+        // Docsify renderizar a página.
+        function stripFrontMatter(hook) {
+          hook.beforeEach(function (content) {
+            return content.replace(/^---\n[\s\S]*?\n---\n/, '');
+          });
+        },
+      ],
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+</body>
+</html>
