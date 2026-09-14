@@ -7,7 +7,7 @@ software.
 
 ## 1. Crie o seu próprio repositório a partir deste template
 
-No GitHub, use o botão **"Use this template"** (não "Fork"). "Use this template" cria um repositório independente, sem o vínculo ativo com o repositório.
+No GitHub, use o botão **"Use this template"**. "Use this template" cria um repositório independente, sem o vínculo ativo com o repositório que acontece no fork.
 
 ## 2. Privacidade do Repositório
 
@@ -18,7 +18,7 @@ enviar seus dados para a pesquisa, no momento certo (veja o passo 6).
 ## 3. Rode o site localmente para escrever com preview
 
 Este site é feito com [Docsify](https://docsify.js.org/): é só Markdown lido
-direto pelo navegador, sem build. A única pegadinha é que o navegador não
+direto pelo navegador, sem build. O navegador não
 deixa abrir o `index.html` direto (duplo clique), ele precisa vir de um
 servidor local. A forma recomendada é a ferramenta oficial do Docsify,
 `docsify-cli`, porque é a mesma que depois te ajuda a entender como o site é

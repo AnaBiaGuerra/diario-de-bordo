@@ -6,17 +6,139 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="Diário de bordo pessoal da disciplina Métodos de Desenvolvimento de Software (MDS) — instrumento de pesquisa PIBIC/UnB." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-  <link rel="icon" href="img/favicon.ico" />
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
   <style>
     :root {
-      --theme-color: #2e8555;
+      --c-bg: #fbf9ff;
+      --c-bg-alt: #f3f1fb;
+      --c-grey: #a2a3bb;
+      --c-soft-peri: #9395d3;
+      --c-peri: #b3b7ee;
+      --c-black: #000807;
+      --theme-color: var(--c-black);
+    }
+
+    /* Fundo geral e tipografia */
+    body {
+      background: var(--c-bg);
+    }
+    .content {
+      background: var(--c-bg);
+    }
+    .markdown-section {
+      color: var(--c-black);
+    }
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3 {
+      color: var(--c-black);
+    }
+    .markdown-section h1 {
+      border-bottom: 1px solid var(--c-peri);
+      padding-bottom: 0.3em;
+    }
+    .markdown-section a {
+      color: var(--c-soft-peri);
+    }
+    .markdown-section a:hover {
+      color: var(--c-black);
+    }
+    .markdown-section blockquote {
+      border-left-color: var(--c-soft-peri);
+      color: var(--c-grey);
+    }
+    .markdown-section code {
+      color: var(--c-black);
+      background-color: var(--c-bg-alt);
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: var(--c-bg-alt);
+      border-right: 1px solid var(--c-peri);
+    }
+    .sidebar > h1 {
+      color: var(--c-black);
+      font-weight: 600;
+    }
+    .sidebar > h1 a {
+      color: var(--c-black);
     }
     .sidebar-nav li[data-nested] > a::before {
       content: "🗒️ ";
     }
+    .sidebar-nav a {
+      color: var(--c-grey);
+    }
+    .sidebar-nav a:hover,
+    .sidebar-nav li.active > a {
+      color: var(--c-soft-peri);
+    }
     nav.app-nav li ul {
       min-width: 100px;
+    }
+
+    /* Busca */
+    .search input {
+      border: 1px solid var(--c-peri) !important;
+    }
+    .search input:focus {
+      border-color: var(--c-black) !important;
+    }
+    .search .matching-post p mark {
+      color: var(--c-soft-peri);
+      background: transparent;
+    }
+    .search a:hover {
+      background: var(--c-bg-alt) !important;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--c-bg-alt);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--c-soft-peri);
+      border-radius: 6px;
+    }
+
+    /* Capa (_coverpage.md) — !important porque o Docsify aplica um
+       gradiente aleatório via style="" inline a cada load quando não há
+       background fixo; sem o !important o inline sempre vence e a cor
+       muda a cada reload. */
+    .cover.show {
+      background: linear-gradient(
+        to left bottom,
+        var(--c-peri) 0%,
+        var(--c-soft-peri) 45%,
+        var(--c-black) 100%
+      ) !important;
+    }
+    .cover.show .cover-main {
+      color: var(--c-bg);
+    }
+    .cover.show .cover-main h1,
+    .cover.show .cover-main h1 small {
+      color: var(--c-bg) !important;
+    }
+    .cover.show .cover-main blockquote {
+      color: var(--c-bg) !important;
+      opacity: 0.9;
+    }
+    .cover.show .cover-main > p:last-child a {
+      color: var(--c-black);
+      background-color: var(--c-bg);
+      border-color: var(--c-bg);
+    }
+    .cover.show .cover-main > p:last-child a:last-child {
+      color: var(--c-bg);
+      background-color: transparent;
+      border-color: var(--c-bg);
     }
   </style>
 </head>
@@ -27,6 +149,8 @@
       name: 'Diário de Bordo — MDS',
       repo: '',
       homepage: 'docs/como-usar.md',
+      coverpage: true,
+      onlyCover: false,
       loadSidebar: true,
       subMaxLevel: 2,
       auto2top: true,
@@ -39,11 +163,6 @@
         placeholder: 'Buscar...',
       },
       plugins: [
-        // O front matter (title/authors/tags/date) fica no início dos
-        // arquivos em blog/ porque scripts/export-entries.mjs precisa dele
-        // para montar o pacote de dados da pesquisa. Ele não tem função de
-        // exibição, então este hook remove o bloco "---...---" antes do
-        // Docsify renderizar a página.
         function stripFrontMatter(hook) {
           hook.beforeEach(function (content) {
             return content.replace(/^---\n[\s\S]*?\n---\n/, '');
