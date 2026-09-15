@@ -25,7 +25,7 @@ servidor local. A forma recomendada é a ferramenta oficial do Docsify,
 publicado no GitHub Pages. Instale uma vez:
 
 ```bash
-npm i -g docsify-cli
+npm i -g docsify-cli/
 ```
 
 E, a partir daí, sempre que quiser escrever, dentro da pasta do repositório:

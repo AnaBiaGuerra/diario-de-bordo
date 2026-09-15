@@ -1,6 +1,7 @@
 - [Como usar](docs/como-usar.md)
 - [Como escrever uma entrada](docs/como-escrever.md)
 - [Perguntas por fase](docs/perguntas.md)
+- [GitHub Pages no projeto da disciplina](docs/github-pages.md)
 - Minhas entradas
   - [Exemplo — Formação de equipe](blog/2027-03-10-formacao-de-equipe-exemplo.md)
 
