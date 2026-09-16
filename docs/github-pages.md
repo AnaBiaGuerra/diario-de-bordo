@@ -1,21 +1,14 @@
-# GitHub Pages no projeto da disciplina
+# GitHub Pages
 
-Esta página é sobre o **projeto de software da sua equipe** na disciplina MDS
-(o sistema que vocês estão construindo), não sobre este diário de bordo. Se
-você chegou aqui procurando como rodar ou publicar o diário, veja [Como usar
-este diário](./como-usar.md).
+Este repositório tem como propósito relatar a experiência de ensino e desenvolvimento de sistemas na matéria de MDS. Chamamos esse relato de **diário de bordo**, que deve ser escrito individualmente. Todos os relatos contidos nesse diário devem estar relacionados com a matéria de alguma forma (direta ou indiretamente). Para mais informações sobre como usar o diário, acesse [Como usar este diário](./como-usar.md).
 
-Em algum momento da disciplina será preciso publicar a documentação do
-projeto (manual de uso, decisões de arquitetura, guia de contribuição) como um
-site, direto do repositório da equipe, usando o **GitHub Pages**. Duas
-opções que recomendo são **Docsify** e **MkDocs**. Nenhuma das duas é obrigatória, use a que fizer mais sentido para a stack do seu projeto.
+Esta página descreve as etapas que você deve seguir para subir seu próprio diário de bordo. Recomendamos duas opções: **Docsify** e **MkDocs**. Nenhuma das duas é obrigatória, use a que fizer mais sentido para você.
 
 ## Docsify
 
 [Docsify](https://docsify.js.org/#/quickstart) renderiza Markdown puro direto no navegador, sem etapa de build. É a mesma ferramenta usada neste diário.
 
-**Quando escolher:** projeto pequeno/médio, você quer só Markdown sem
-configurar nada de build, ou busca maior facilidade.
+**Quando escolher:** Você quer só Markdown sem configurar nada de build, ou busca maior facilidade.
 
 ### Instalação
 
@@ -52,7 +45,7 @@ Não é necessário nenhum workflow de Actions para o Docsify.
 [MkDocs](https://www.mkdocs.org/getting-started/) gera um site estático (HTML/CSS/JS) a partir de arquivos Markdown, com um passo de build. É comum em projetos Python e tem um tema popular, o
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
-**Quando escolher:** projeto já usa Python/pip, ou você quer um tema mais
+**Quando escolher:** Você quer um tema mais
 pronto (busca, navegação, dark mode) sem estilizar nada manualmente.
 
 ### Instalação
@@ -92,12 +85,5 @@ build mais recente).
 
 Alternativa mais automatizada: configurar uma GitHub Action que roda `mkdocs
 build` (ou `mkdocs gh-deploy`) a cada push na branch principal, para não
-depender de rodar o comando manualmente. Isso é opcional e só vale a pena se o
-time já estiver confortável com Actions.
+depender de rodar o comando manualmente.
 
-## Não confunda com o diário de bordo
-
-Esta página é sobre a documentação **pública** do projeto de software da
-equipe. O diário de bordo pessoal é outra coisa: é um instrumento de pesquisa
-com regras próprias de anonimato e privacidade, publicado (se publicado) só
-quando e como descrito em [Como usar este diário](./como-usar.md).
