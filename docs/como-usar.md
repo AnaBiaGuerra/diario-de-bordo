@@ -2,7 +2,7 @@
 
 Este repositório pode ser usado como **template** para o diário de bordo que você vai escrever ao longo da disciplina **Métodos de Desenvolvimento de Software (MDS)**. Esse diário (blog) tem como propósito coletar a experiência dos estudantes ao longo do semestre. Algumas perguntas foram desenvolvidas para ajudar a trazer insights sobre como e o que escrever no seu diário, acesse a página de [como escrever o meu diário](./como-escrever-o-meu-diario.md) e [perguntas](perguntas.md).
 
-A importância desse diário vai além da disciplina. Compartilhar sua experiência de desenvolvimento com os outros alunos pode ajudar seus colegas e futuros alunos em MDS. Além disso, é possível ver o progresso ao longo do semestre e quais foram as decisões, impecilhos, sucessos e barreiras enfrentadas. Nesse sentido a visibilidade do repositório deve ser **pública**, para que seu diário possa ser acessado e consultado por outras pessoas.
+A importância desse diário vai além da disciplina. Compartilhar sua experiência de desenvolvimento com os outros alunos pode ajudar seus colegas e futuros alunos em MDS. Além disso, é possível ver o progresso ao longo do semestre e quais foram as decisões, empecilhos, sucessos e barreiras enfrentadas. Nesse sentido a visibilidade do repositório deve ser **pública**, para que seu diário possa ser acessado e consultado por outras pessoas.
 
 ## 1. Crie o seu próprio repositório a partir deste template
 
