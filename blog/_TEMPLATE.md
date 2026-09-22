@@ -1,6 +1,6 @@
 ---
 title: "<Nome da fase> — <data>"
-authors: [seu-pseudonimo]
+authors:
 tags: [formacao-equipe]
 date: 2027-03-10
 ---
@@ -8,12 +8,10 @@ date: 2027-03-10
 <!--
 Modelo de entrada do diário de bordo. Duplique este arquivo uma vez por fase
 (5 no semestre todo), renomeando para algo como
-blog/2027-03-10-formacao-de-equipe.md, e preencha:
+blog/2027-03-10-primeiro-envio.md, e preencha:
 
 - title: nome da fase + data
-- authors: seu pseudônimo (o MESMO em todas as entradas)
-- tags: o slug da fase:
-    formacao-equipe | pre-release-1 | entre-releases | pre-release-2 | pos-entrega
+- tags: marcação temporal: ex: primeiro envio, segundo envio..
 - date: data da entrada (YYYY-MM-DD)
 
 O bloco entre "---" acima (front matter) não aparece na tela — ele existe só
@@ -23,8 +21,7 @@ semestre. Não apague nem renomeie essas chaves.
 Depois de criar o arquivo, adicione um link para ele em _sidebar.md, na
 seção "Minhas entradas", para ele aparecer na navegação do site.
 
-NÃO coloque nome real, matrícula, e-mail ou usuário do GitHub real em nenhum
-campo ou no corpo do texto. As perguntas completas de cada fase estão em
+As perguntas completas de cada fase estão em
 docs/perguntas.md.
 -->
 
