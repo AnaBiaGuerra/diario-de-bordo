@@ -1,14 +1,10 @@
 ---
 title: "Formação de equipe — exemplo ilustrativo"
 authors:
-  - name: exemplo-lobo-42
-tags: [formacao-equipe]
+tags: []
 date: 2027-03-10
 ---
 
-> **Este post é um EXEMPLO ilustrativo**, escrito para mostrar o formato
-> esperado de uma entrada real. Não é uma resposta de pesquisa de verdade —
-> apague-o ou ignore-o ao começar a escrever a sua própria.
 
 ## Descreva como está sendo o processo de organização da sua equipe até agora — papéis, expectativas, primeiras decisões.
 
